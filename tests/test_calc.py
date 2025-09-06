@@ -1,4 +1,5 @@
-from app.calc import soma, multiplica, divisao, subtracao
+def test_soma():
+    assert soma(2, 3) == 999  # valor errado propositalmentefrom app.calc import soma, multiplica, divisao, subtracao
 
 def test_soma():
     assert soma(2, 3) == 5
