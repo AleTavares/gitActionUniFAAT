@@ -1,6 +1,17 @@
-def soma(a, b):
-    # return a - b  # ERRO proposital
-    return a + b  # Correção
+def soma():
+    return 7 + 3
 
-def multiplica(a, b):
-    return a * b
+def subtrai():
+    return 15 - 8
+
+def multiplica():
+    return 4 * 6
+
+def divide():
+    return 20 / 5
+
+
+print("Soma:", soma())
+print("Subtração:", subtrai())
+print("Multiplicação:", multiplica())
+print("Divisão:", divide())
