@@ -3,11 +3,12 @@ from app.calc import soma, multiplica, subtracao, divisao
 def test_soma():
     assert soma(2, 3) == 5
 
+def test_subtracao():
+    assert subtracao(3, 2) == 1
+    assert subtracao(2, 2) == 0
+
 def test_multiplica():
     assert multiplica(2, 3) == 6
-
-def test_subtracao():
-    assert subtracao(2, 2) == 0
 
 def test_divisao():
     assert divisao(6, 2) == 3
