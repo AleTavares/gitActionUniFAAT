@@ -1,4 +1,4 @@
-from app.calc import soma, multiplica, divisao, subtracao, potenciacao
+from app.calc import soma, multiplica, divisao, subtracao
 
 def test_soma():
     assert soma(2, 3) == 5
