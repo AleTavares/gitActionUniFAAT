@@ -5,3 +5,6 @@ def test_soma():
 
 def test_multiplica():
     assert multiplica(2, 3) == 6
+
+def test_subtrai():
+    assert subtrai(3, 2) == 1
