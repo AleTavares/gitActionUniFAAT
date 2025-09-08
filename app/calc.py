@@ -8,5 +8,5 @@ def multiplica(a, b):
 def divisao(a, b):
     return a / b
 
-def subtracao(a, b):
+def minus(a, b):
     return a - b

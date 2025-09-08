@@ -9,5 +9,5 @@ def test_multiplica():
 def test_divisao():
     assert divisao(10, 2) == 5
 
-def test_subtracao():
-    assert subtracao(4, 2) == 2
+def test_minus():
+    assert minus(4, 2) == 2
