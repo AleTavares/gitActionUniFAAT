@@ -10,4 +10,4 @@ def test_multiplica():
     assert multiplica(2, 3) == 6
 
 def test_divisao():
-    assert divisao(6, 2) == 3
+    assert divisao(6, 2) == 200
