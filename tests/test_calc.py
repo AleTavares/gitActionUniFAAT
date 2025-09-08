@@ -1,5 +1,5 @@
 from app.calc import soma, multiplica
-
+#teste
 def test_soma():
     assert soma(2, 3) == 5
 
