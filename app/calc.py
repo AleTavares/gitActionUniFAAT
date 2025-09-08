@@ -6,7 +6,7 @@ def multiplica(a, b):
     return a * b
 
 def subtracao(a, b):
-    return a - b
+    return a + b  # ERRO proposital - deveria ser subtração
 
 def divisao(a, b):
     if b == 0:
