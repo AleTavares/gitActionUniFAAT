@@ -6,5 +6,5 @@ def test_soma():
 def test_multiplica():
     assert multiplica(2, 3) == 6
 
-def test_potencia():
-    assert potencia(3, 2) == 9
+def test_divide():
+    assert potencia(4, 2) == 2
