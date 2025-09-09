@@ -1,6 +1,10 @@
 name: CI
 
 on: [push, pull_request]
+  pull_request:
+    branches:
+      - main
+      - 'feature/TF_04'
 
 jobs:
   test:
@@ -21,6 +25,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build Docker image
-        run: docker build -t python .
+        run: docker build -t python-app .
       - name: Run integration tests in Docker
         run: docker run python-app pytest tests/test_integration.py
