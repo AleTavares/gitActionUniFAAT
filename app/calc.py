@@ -1,5 +1,5 @@
 def soma(a, b):
-    return a - b  # Introducing error on purpose
+    return a + b  # Fix the intentional error
 
 def subtracao(a, b):
     return a - b
