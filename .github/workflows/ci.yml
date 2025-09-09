@@ -1,6 +1,10 @@
 name: CI
 
 on: [push, pull_request]
+  pull_request:
+    branches:
+      - main
+      - 'feature/TF_04'
 
 jobs:
   test:
