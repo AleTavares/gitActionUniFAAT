@@ -1,8 +1,22 @@
 name: CI
 
-on: [push, pull_request]
+on: 
+  pull_request:
+    branches:
+      - main
+      - 'feature/TF_04'
 
 jobs:
+  validate-pr-on-specific-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibe informações do Pull Request
+        run: |
+          echo "Workflow acionado por um Pull Request."
+          echo "Este job só executa para PRs direcionados a 'main' ou 'feature/TF_04'."
+          echo "Branch de Origem (head): ${{ github.head_ref }}"
+          echo "Branch de Destino (base): ${{ github.base_ref }}"
+
   test:
     runs-on: ubuntu-latest
     steps:
@@ -20,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build Docker image #Erro proposital
-        run: docker build -t python .
+      - name: Build Docker image
+        run: docker build -t python-app .
       - name: Run integration tests in Docker
         run: docker run python-app pytest tests/test_integration.py
