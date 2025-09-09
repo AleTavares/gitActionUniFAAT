@@ -4,3 +4,8 @@ def soma(a, b):
 
 def multiplica(a, b):
     return a * b
+
+# Função de potenciação
+def potencia(base, expoente):
+    """Retorna base elevado ao expoente."""
+    return base ** expoente
