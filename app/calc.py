@@ -1,6 +1,5 @@
 def soma(a, b):
-    # return a - b  # ERRO proposital
-    return a + b  # Correção
+    return a - b  # ERRO proposital para demonstrar CI
 
 def subtracao(a, b):
     return a - b
