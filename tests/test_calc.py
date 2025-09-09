@@ -10,7 +10,7 @@ def test_multiplica():
     assert multiplica(4, 3) == 12
 
 def test_divisao():
-    assert divisao(10, 2) == 5
+    assert divisao(6, 2) == 3
 
 def test_potenciacao():
     assert 2 ** 3 == 8
