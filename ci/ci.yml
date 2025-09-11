@@ -1,15 +1,24 @@
 name: CI
 
+on:
+  push:
+    branches:
+      - main
+      - feature/TF_04
+  pull_request:
+    branches:
+      - main
+      - feature/TF_04
 
 jobs:
-  test:
+  unit-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.9'
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run unit tests
@@ -17,6 +26,7 @@ jobs:
 
   integration-test:
     runs-on: ubuntu-latest
+    needs: unit-test # Garante que os testes unitários passem primeiro
     steps:
       - uses: actions/checkout@v4
       - name: Build Docker image

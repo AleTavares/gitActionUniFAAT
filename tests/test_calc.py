@@ -1,3 +1,4 @@
+import pytest
 from app.calc import soma, multiplica, divisao, subtracao
 
 def test_soma():
@@ -11,3 +12,7 @@ def test_multiplica():
 
 def test_divisao():
     assert divisao(6, 2) == 3
+
+def test_divisao_por_zero():
+    with pytest.raises(ValueError):
+        divisao(10, 0)
