@@ -21,6 +21,7 @@ Este repositório contém um erro proposital para demonstrar como o pipeline de 
 
 No arquivo `app/calc.py`, a função `soma` está implementada para subtrair os números em vez de somá-los:
 
+
 ```python
 def soma(a, b):
     return a - b  # ERRO proposital

@@ -10,3 +10,15 @@ def multiplica(a, b):
 
 def divisao(a, b):
     return a / b
+
+def potencia(a, b):
+    return a ** b
+
+def modulo(a, b):
+    return a % b
+
+import math
+
+def raiz_quadrada(a):
+    return math.sqrt(a)
+
