@@ -1,9 +1,9 @@
 def soma(a, b):
     # return a - b  # ERRO proposital
-    return a + b  # Correção
+    return a - b  # Correção
 
 def subtracao(a, b):
-    return a _ b
+    return a - b
 
 def multiplica(a, b):
     return a * b

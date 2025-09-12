@@ -1,7 +1,7 @@
 from app.calc import soma, multiplica, divisao, subtracao
 
 def test_soma():
-    assert soma(2, 3) == 5
+    assert soma(2, 3) == 8
 
 def test_subtracao():
     assert subtracao(3, 2) == 1
