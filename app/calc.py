@@ -3,7 +3,7 @@ def soma(a, b):
     return a + b  # Correção
 
 def subtracao(a, b):
-    return a - b
+    return a _ b
 
 def multiplica(a, b):
     return a * b
